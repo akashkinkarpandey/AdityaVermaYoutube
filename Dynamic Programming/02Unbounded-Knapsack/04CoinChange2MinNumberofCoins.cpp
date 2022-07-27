@@ -25,7 +25,7 @@ using namespace std;
 // Minimum number of coins required is 2
 int CoinChange1(int coin[], int n, int amount_required, vector<vector<int>> &dp)
 {
-    for (int i = 1; i <= n; i++)
+    for (int i = 2; i <= n; i++)
     {
         for (int j = 1; j <= amount_required; j++)
         {
