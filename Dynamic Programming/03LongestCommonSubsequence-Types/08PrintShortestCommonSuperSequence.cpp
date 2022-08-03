@@ -80,7 +80,7 @@ string generate(string &X, string &Y, int n, int m, vector<vector<int>> &dp)
     }
     while (j > 0)
     {
-        s += X[j - 1];
+        s += Y[j - 1];
         j--;
     }
     cout<<"\n";
