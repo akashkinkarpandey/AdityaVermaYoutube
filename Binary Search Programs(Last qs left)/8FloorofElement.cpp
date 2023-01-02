@@ -1,6 +1,8 @@
 #include <iostream>
 #include <vector>
 using namespace std;
+//if number is present return it
+//if not present find greatest number smaller than it
 int BinarySearch(vector<int> &nums, int target)
 {
     int res = -1;
