@@ -9,7 +9,9 @@ int BinarySearch(vector<int> &nums, int target,int low,int high)
         int mid = low + (high - low) / 2;
         if (nums[mid] == target)
         {
-            res = mid;break;
+            res = mid;
+            high=mid-1;
+            //break;
         }
         else if (nums[mid] < target)
         {
