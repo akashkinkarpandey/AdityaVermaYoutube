@@ -34,6 +34,8 @@ int main()
     //input is 2 6 10 15 
     //target is 10
     //answer is 0(10-10)
+    //target is 11
+    //answer is 1(11-10)
     int n, target;
     vector<int> v;
     cin >> n;
