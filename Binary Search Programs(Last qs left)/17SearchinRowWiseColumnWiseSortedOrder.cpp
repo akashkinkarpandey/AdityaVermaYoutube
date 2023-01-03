@@ -2,6 +2,13 @@
 #include <vector>
 #include <utility>
 using namespace std;
+//columns are sorted in increasing order
+//rows are sorted in increasing order
+//10 20 30 40
+//15 25 35 45
+//27 29 37 48
+//32 33 39 50
+//search for 29 (start from top right corner)
 int n=50;
 const int m=50;
 pair<int,int> func(int a[][m],int b,int target)
