@@ -19,9 +19,9 @@ pair<int,int> func(int a[][m],int b,int target)
         if(a[i][j]==target)
         return {i,j};
         else if(a[i][j]>target)
-        j--;
+        j--;//reduce column
         else if(a[i][j]<target)
-        i++;
+        i++;//increase row
     }
     return {-1,-1};
 }
