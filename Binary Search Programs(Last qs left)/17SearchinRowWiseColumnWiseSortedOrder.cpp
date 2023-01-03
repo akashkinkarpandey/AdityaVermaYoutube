@@ -9,6 +9,7 @@ using namespace std;
 //27 29 37 48
 //32 33 39 50
 //search for 29 (start from top right corner)
+//type of qs->https://leetcode.com/problems/search-a-2d-matrix/ 
 int n=50;
 const int m=50;
 pair<int,int> func(int a[][m],int b,int target)
