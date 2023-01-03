@@ -104,8 +104,8 @@ int main()
     else cout<<"Number not found";
     return 0;
     //Input
-    //5 2
+    //5 2 (n and target)
     //4 5 1 2 3
     //output
-    //3 
+    //3 (index of 2)
 }
