@@ -1,11 +1,11 @@
 #include <iostream>
 #include <vector>
 using namespace std;
-//Bitonic() is increasing then decreasing
+//Bitonic() is strictly increasing then decreasing(no multiple peeks)
 // https://leetcode.com/problems/peak-index-in-a-mountain-array/submissions/
 //leetcode accepted
 // https://practice.geeksforgeeks.org/problems/maximum-value-in-a-bitonic-array3001/1#
-
+//same as previous qs ->find peek
 int BinarySearch(vector<int> &a)
 {
     int t = a.size();
