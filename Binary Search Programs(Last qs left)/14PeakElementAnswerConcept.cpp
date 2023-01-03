@@ -6,6 +6,7 @@ using namespace std;
 //hence return type is vector
 
 // https://leetcode.com/problems/find-peak-element/
+// same as next qs->find max element in bitonic array
 int BinarySearch(vector<int> &a)
 {   //this function is in leetcode and got accepted
     int t = a.size();
@@ -106,3 +107,47 @@ int main()
 //answer might be 20 or 90
 
 // first and element should be greater than aadjacent element to be a peak element
+
+//Below is gfg code for link-https://practice.geeksforgeeks.org/problems/maximum-value-in-a-bitonic-array3001/1 
+// class Solution {
+//     int BinarySearch(int a[],int n)
+// {
+//     int t = n;
+//     int low = 0, high = t - 1;
+//     while (low <= high)
+//     {
+//         int mid = low + (high - low) / 2;
+//         if (mid > 0 && mid < t - 1)
+//         {
+//             if (a[mid] > a[mid - 1] && a[mid] > a[mid + 1])
+//                 return mid;
+//             else if (a[mid - 1] > a[mid])
+//             {
+//                 high = mid - 1;
+//             }
+//             else if (a[mid + 1] > a[mid])
+//             {
+//                 low = mid + 1;
+//             }
+//         }
+//         else if (mid == 0)
+//         {
+//             if (a[0] > a[1])
+//                    return 0;
+//             low=mid+1;
+//         }
+//         else if (mid == t - 1)
+//         {
+//             if (a[t - 1] > a[t - 2])
+//                 return t - 1;
+//             return t - 2;
+//         }
+//     }
+
+//     return -1;
+// }
+//     int findMaximum(int[] arr, int n) {
+//         // code here
+//         return arr[BinarySearch(arr,n)];
+//     }
+// }
