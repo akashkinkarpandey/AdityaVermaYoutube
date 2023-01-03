@@ -2,7 +2,7 @@
 #include <vector>
 using namespace std;
 //fuction is inc,dec,inc,dec
-//so multiple peaks,
+//so multiple peaks is possible,
 //hence return type is vector
 
 // https://leetcode.com/problems/find-peak-element/
