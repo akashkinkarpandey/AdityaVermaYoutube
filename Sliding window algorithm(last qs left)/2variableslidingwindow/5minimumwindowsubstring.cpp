@@ -108,3 +108,54 @@ int main()
 //         return ans;
 //     }
 // };
+
+
+Leetcode link
+https://leetcode.com/problems/minimum-window-substring/description/
+Leetcode Code
+// class Solution {
+// public:
+//     string minWindow(string s, string s2) 
+//     {
+//         unordered_map<char, int> mp;
+//         long long n2=s2.size();
+//         for(long long i=0;i<n2;i++)
+//             mp[s2[i]]++;
+//         long long count = mp.size();
+//         string ans="";
+//         long long i=0,j=0,n1=s.size();
+//         long long mini=INT_MAX;
+//         pair<int,int>p;
+//         if(n1<n2)//edge cases
+//         return "";
+//         while(j<n1)
+//         {
+//             if(mp.find(s[j])!= mp.end())
+//             {
+//                 mp[s[j]]--;
+//                 if (mp[s[j]] == 0)
+//                     count--;
+//             }
+//             while(count == 0)
+//             {
+//                 if(j-i+1<mini)
+//                 {
+//                     mini=j-i+1;
+//                     // ans=s.substr(i,mini);
+//                     p={i,j};
+//                 }
+//                 if (mp.find(s[i])!= mp.end())
+//                 {
+//                     mp[s[i]]++;
+//                     if (mp[s[i]] > 0)
+//                            count++;
+//                 }
+//                 i++;
+//             }
+//             j++;
+//         }
+//         if(mini==(INT_MAX))
+//             return "";
+//         return s.substr(p.first,p.second-p.first+1);//j-i+1    
+//     }
+// };
