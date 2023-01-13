@@ -59,35 +59,52 @@ int main()
     return 0;
 }
 // https://practice.geeksforgeeks.org/problems/smallest-window-in-a-string-containing-all-the-characters-of-another-string-1587115621/1
-// for(int i = 0, j = 0;j<s.size();)
+// class Solution
+// {
+//     public:
+//     //Function to find the smallest window in the string s consisting
+//     //of all the characters of string p.
+//     string smallestWindow (string s, string s2)
 //     {
-//         if(mp.find(s[j])!= mp.end())
+//         unordered_map<char, int> mp;
+//         int n2=s2.size();
+//         for(int i=0;i<n2;i++)
+//             mp[s2[i]]++;
+//         int count = mp.size();
+//         string ans="";
+//         int i=0,j=0,n1=s.size();
+//         int mini=n1;
+//         while(j<n1)
 //         {
-//             mp[s[j]]--;
-//             if (mp[s[j]] == 0)
-//                 count--;
-//         }
-//         if(count == 0)
-//         {
+//             if(mp.find(s[j])!= mp.end())
+//             {
+//                 mp[s[j]]--;
+//                 if (mp[s[j]] == 0)
+//                     count--;
+//             }
 //             while(count == 0)
 //             {
 //                 // mini = min(mini, j - i + 1);
 //                 if(j-i+1<mini)
 //                 {
 //                     mini=j-i+1;
-//                     ans=s.substr(i,j+1);
+//                     ans=s.substr(i,mini);
 //                 }
 //                 if (mp.find(s[i]) != mp.end())
 //                 {
 //                     mp[s[i]]++;
 //                     if (mp[s[i]] > 0)
 //                        { 
-//                            cout<<i<<" "<<j<<endl;
+//                           // cout<<i<<" "<<j<<endl;
 //                            count++;
 //                        }
 //                 }
 //                 i++;
 //             }
+//             j++;
 //         }
-//         j++;
+//         if(mini==n1)
+//             return "-1";
+//         return ans;
 //     }
+// };
