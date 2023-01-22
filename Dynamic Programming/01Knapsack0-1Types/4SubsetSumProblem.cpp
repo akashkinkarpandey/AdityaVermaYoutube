@@ -1,6 +1,8 @@
 #include <iostream>
 #include <vector>
 using namespace std;
+// gfg accepted
+// https://practice.geeksforgeeks.org/problems/subset-sum-problem-1611555638/1
 //video 7 of aditya verma
 
 // we just need to return true or false
@@ -73,3 +75,39 @@ int main()
     else cout<<"No,subset sum does not exist\n";
     return 0;
 }
+
+
+//gfg solution
+// class Solution{   
+// public:
+// bool subset(int n,int target,vector<int>&a,vector<vector<bool>>&dp)
+// {
+//     for(int i=1;i<=n;i++)
+//     {
+//         for(int j=1;j<=target;j++)
+//         {
+//             if(a[i-1]<=j)
+//             {
+//                 dp[i][j]=(
+//                     dp[i-1][j] ||
+//                     dp[i-1][j-a[i-1]]
+//                 );
+//             }
+//             else
+//             {
+//                 dp[i][j]=dp[i-1][j];
+//             }
+//         }
+//     }
+//     return dp[n][target];
+// }
+//     bool isSubsetSum(vector<int>a, int target){
+//     int n=a.size();
+//     vector<vector<bool>>dp(n+1,vector<bool>(target+1));
+//     for(int i=0;i<=target;i++)
+//         dp[0][i]=false;
+//     for(int i=0;i<=n;i++)
+//         dp[i][0]=true;
+//     return subset(n,target,a,dp);
+//     }
+// };
