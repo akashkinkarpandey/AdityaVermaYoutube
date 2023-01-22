@@ -1,6 +1,9 @@
 #include <iostream>
 #include <algorithm>
 #include <vector>
+
+// https://practice.geeksforgeeks.org/problems/0-1-knapsack-problem0945/1
+// gfg accepted
 using namespace std;
 // This is way 2
 // we make dp matrix of w+1 rows and n+1 columns
@@ -59,7 +62,6 @@ int main()
 }
 
 
-// https://practice.geeksforgeeks.org/problems/0-1-knapsack-problem0945/1
 // class Solution
 // {
 //     public:
