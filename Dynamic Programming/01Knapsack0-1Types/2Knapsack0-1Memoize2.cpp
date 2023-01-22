@@ -57,3 +57,38 @@ int main()
     printf("MAX profit is %d\n", knapSack01(wt, val, n, capacity, dp));
     return 0;
 }
+
+
+// https://practice.geeksforgeeks.org/problems/0-1-knapsack-problem0945/1
+// class Solution
+// {
+//     public:
+//     //Function to return max value that can be put in knapsack of capacity W.
+//     int knapSack01(int wt[], int val[], int n, int capacity, vector<vector<int>> &dp)
+//     {
+//         if (n == 0 or capacity == 0)
+//             return 0;
+//         if (dp[capacity][n] != -1)
+//             return dp[capacity][n];
+//         if (wt[n - 1] <= capacity)
+//         {
+//             return dp[capacity][n] = max(
+//                        val[n - 1] + knapSack01(wt, val, n - 1, capacity - wt[n - 1], dp),
+//                        knapSack01(wt, val, n - 1, capacity, dp));
+//         }
+//         else if (wt[n - 1] > capacity)
+//         {
+//             return dp[capacity][n] = knapSack01(wt, val, n - 1, capacity, dp);
+//         }
+//     }
+//     int knapSack(int capacity, int wt[], int val[], int n) 
+//     { 
+//        // Your code here
+//        vector<vector<int>> dp(capacity + 1, vector<int>(n + 1, -1));
+//         for (int i = 0; i <= capacity; i++)
+//         dp[i][0] = 0;
+//         for (int i = 0; i <= n; i++)
+//         dp[0][i] = 0;
+//         return knapSack01(wt, val, n, capacity, dp);
+//     }
+// };
