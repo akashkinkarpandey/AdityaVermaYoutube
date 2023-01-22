@@ -2,6 +2,8 @@
 #include <algorithm>
 #include <vector>
 using namespace std;
+// gfg accepted
+// https://practice.geeksforgeeks.org/problems/0-1-knapsack-problem0945/1
 //This is way 1
 //we make dp matrix of n+1 rows and w+1 columns
 // Enter size
