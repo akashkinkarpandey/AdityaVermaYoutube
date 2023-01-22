@@ -12,11 +12,16 @@ using namespace std;
 // Enter array elements
 // 2 3 7 8 10
 // Enter target sum
-// 11
-// Yes ,subset sum exists
-
+// 11->{3,8}
 // Explanation-
 // 3+8=11
+// Enter array elements
+// 3
+// Enter target sum
+// 0
+// Yes ,subset sum exists->empty subset
+
+
 bool subset(int n,int target,int a[],vector<vector<bool>>&dp)
 {
     for(int i=1;i<=n;i++)
