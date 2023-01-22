@@ -2,6 +2,7 @@
 #include <algorithm>
 #include <vector>
 using namespace std;
+//gfg accepted
 //video 6 of aditya verma
 // Enter size
 // 3
