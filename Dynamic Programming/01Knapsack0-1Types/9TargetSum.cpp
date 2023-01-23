@@ -16,7 +16,7 @@ using namespace std;
 // Explanation-
 // {1,3} and {1,2}
 // {1,3} and {1,2}
-// {1,1,2} and {1,3} ->3 pairs of subsets
+// {1,1,2} and {3} ->3 pairs of subsets
 int subset(int n,int target,int a[],vector<vector<int>>&dp)
 {
     for(int i=1;i<=n;i++)
