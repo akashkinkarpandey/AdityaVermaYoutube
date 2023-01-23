@@ -12,9 +12,10 @@ using namespace std;
 
 // sum of {1,6,5} - sum of {11} = 1
 
-//find minimum of (range-2*S1) instead of S2-S1
-// S1+S2=sum of entire array..->S2=Sum-S1
-//find S1 in 0 to range/2 in last row of dp table
+// find minimum of (range-2*S1) instead of minimum of (S2-S1)
+// S1+S2=sum of entire array..->S2=sum-S1
+// range is sum of entire array
+// find values of S1 from 0 to range/2 in last row of dp table
 bool subset(int n, int target, int a[], vector<vector<bool>> &dp)
 {
     for (int i = 1; i <= n; i++)
@@ -58,7 +59,7 @@ int main()
     for (int i = 0; i <= n; i++)
         dp[i][0] = true;
     subset(n, target, a, dp);
-    for (int i = target / 2; i >= 1; i--)
+    for (int i = target / 2; i >= 0; i--)
     {
         if (dp[n][i] == true)
         {
