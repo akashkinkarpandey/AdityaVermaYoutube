@@ -9,7 +9,7 @@ using namespace std;
 // 4
 // Enter array elements
 // 1 1 2 3
-// Enter difference
+// Enter target sum
 // 1
 // Number of pairs of subsets is 3
 
