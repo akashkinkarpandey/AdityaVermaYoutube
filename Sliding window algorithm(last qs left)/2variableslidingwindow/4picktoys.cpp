@@ -28,6 +28,7 @@ int main()
         }
         else if (m.size() > k)
         {
+            //can run a while loop with condition m.size()>k
             m[s[i]]--;
             if (m[s[i]] == 0)
                 m.erase(s[i]);
