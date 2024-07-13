@@ -29,12 +29,18 @@ int main()
         {
             mp[s[j]]--;
             if (mp[s[j]] == 0)
-                count--;
+                count--;//we should not erase mp[s[j]]
         }
         if(count == 0)
         {
             while(count == 0)
             {
+                // while loop is required as count won't always increase-> 
+                // an element might be present at index i which is not present in s2,then count remains zero, but i will increase
+                // in that case,in next iteration, we will get a new min as well
+                // consider we are finding abcd string in string fghaijkabcd,count is then 4
+                // we will find abcd in fghaijkabcd at first when i=0 and j=10,min will be 10
+                //in next iterations i will only increase and finally we will get min =4
                 // mini = min(mini, j - i + 1);
                 if(j-i+1<mini)
                 {
@@ -42,9 +48,9 @@ int main()
                     ans=s.substr(i,mini);
                 }
                 if (mp.find(s[i]) != mp.end())
-                {
+                { 
                     mp[s[i]]++;
-                    if (mp[s[i]] > 0)//check-> should be ==1 and not >0
+                    if (mp[s[i]] > 0)//check-> should be ==1 and not >0 (actually if we analyze mp[s[i]] will never be >1 over here so >0 will work for this if)
                        { 
                            cout<<i<<" "<<j<<endl;
                            count++;
