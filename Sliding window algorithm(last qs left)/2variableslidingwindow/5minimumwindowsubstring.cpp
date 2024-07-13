@@ -44,7 +44,7 @@ int main()
                 if (mp.find(s[i]) != mp.end())
                 {
                     mp[s[i]]++;
-                    if (mp[s[i]] > 0)
+                    if (mp[s[i]] > 0)//check-> should be ==1 and not >0
                        { 
                            cout<<i<<" "<<j<<endl;
                            count++;
