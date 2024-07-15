@@ -1,3 +1,5 @@
+//as per aditya verma's explanation try returning the element and not index
+//try using ceil/floor method    
 #include<iostream>
 #include<vector>
 #include<cstdlib>
