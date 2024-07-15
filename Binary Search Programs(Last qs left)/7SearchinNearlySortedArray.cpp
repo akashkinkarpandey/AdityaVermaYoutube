@@ -49,4 +49,4 @@ int main()
     cout<<t;
 }
 //5 10 20 30 40
-//element at index i may be at index i-1 or index i+1
+//element at index i may be at index i-1 or index i+1 or index i
