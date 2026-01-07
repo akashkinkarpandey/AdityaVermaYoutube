@@ -6,6 +6,7 @@ int main()
 vector<int>v;
 int size,k;
 cin>>size>>k;
+//element k of array can be k forwards or backward position excluding its own position(+-k)
 int a[size];
 for(int i=0;i<size;i++)
 cin>>a[i];
