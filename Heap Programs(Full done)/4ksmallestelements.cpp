@@ -8,7 +8,7 @@ cin>>size>>k;
 int a[size];
 for(int i=0;i<size;i++)
     cin>>a[i];
-priority_queue<int>mini;
+priority_queue<int>mini;//max heap
 for(int i=0;i<size;i++)
 {
     mini.push(a[i]);
